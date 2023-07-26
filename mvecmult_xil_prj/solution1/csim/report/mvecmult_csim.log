@@ -1,0 +1,12 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../mvecmult_tb.cpp in debug mode
+   Compiling ../../../../mvecmult.cpp in debug mode
+   Generating csim.exe
+Test 1: Success
+Test 2: Success
+Test 3: Success
+Test 4: Success
+Test 5: Success
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
