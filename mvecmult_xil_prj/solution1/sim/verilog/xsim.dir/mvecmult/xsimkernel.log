@@ -1,7 +1,0 @@
-Running: xsim.dir/mvecmult/xsimk -simmode gui -wdb mvecmult.wdb -simrunnum 0 -socket 33770
-Design successfully loaded
-Design Loading Memory Usage: 45196 KB (Peak: 45196 KB)
-Design Loading CPU Usage: 30 ms
-Simulation completed
-Simulation Memory Usage: 119128 KB (Peak: 241812 KB)
-Simulation CPU Usage: 429370 ms
