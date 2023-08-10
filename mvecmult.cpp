@@ -1,16 +1,19 @@
 #include "mvecmult.h"
 
+/* The function mvecmult is the hw implimentation of matrix vector multiplication
+that will be tested when peforming Vivado testing 
+*/
 void mvecmult(int A[SIZE][SIZE], int v[SIZE], int result[SIZE]) {
-    #pragma HLS array_partition variable = A dim = 2 factor = 8 cyclic 
-//    #pragma HLS array_partition variable=A dim=2 complete
+    #pragma HLS array_partition variable=A dim=2 complete
     #pragma HLS array_partition variable=v complete
-    #pragma HLS array_partition variable=result complete
 
     for (int i = 0; i < SIZE; i++) {
-        result[i] = 0;
+        #pragma HLS pipeline
+        int acc = 0;
         for (int j = 0; j < SIZE; j++) {
-            #pragma unroll 
-            result[i] += A[i][j] * v[j];
+            #pragma HLS unroll 
+            acc += A[i][j] * v[j];
         }
+        result[i] = acc;
     }
 }
