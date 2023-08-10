@@ -1,3 +1,5 @@
+//Headerfile that defines functions of the source file
+
 #pragma once
 
 #ifndef MVECMULT_H
