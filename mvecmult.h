@@ -1,4 +1,4 @@
-//Headerfile that defines functions of the source file
+// Headerfile that defines functions of the source file
 
 #pragma once
 
